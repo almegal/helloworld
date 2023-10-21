@@ -2,16 +2,75 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.println("Привет мир!\n");
+        //task 1
+        var dog = 8.0;
+        var cat = 3.6;
+        var paper = 763789;
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+        // task 2
+        dog += 4;
+        cat += 4;
+        paper += 4;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        //task 3
+
+        dog -= 3.5;
+        cat -= 1.6;
+        paper -= 7639;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        //task 4
+        var friend = 19;
+        System.out.println(friend);
+        friend = friend + 2;
+        System.out.println(friend);
+        friend = friend / 7;
+        System.out.println(friend);
+
+        //task 5
+        var frog = 3.5;
+        System.out.println(frog);
+        frog = frog * 10;
+        System.out.println(frog);
+        frog = frog/3.5;
+        System.out.println(frog);
+        frog += 4;
+        System.out.println(frog);
+
+        //task 6
+        var fighter1 = 78.2;
+        var fighter2 = 82.7;
+
+        var totalMass = fighter1 + fighter2;
+        var differentMass = fighter2 - fighter1;
+
+        System.out.println(totalMass);
+        System.out.println(differentMass);
+
+        //task 7
+        var dfMass = fighter2 - fighter1;
+        var dfMass1 = fighter2 % fighter1;
+
+        //task 8
+        var workHours = 640;
+        var workTime = 8;
+        var totalEmploeyr = workHours/workTime;
+        System.out.println("Всего работников в компании — " + totalEmploeyr + " человек");
+
+        var newEmployer = 94;
+        var totalEmployerAfterUpdate = totalEmploeyr + newEmployer;
+        var newWorkHours = totalEmployerAfterUpdate * workTime;
+        System.out.println("Если в компании работает " + totalEmployerAfterUpdate + " человек, то всего " + newWorkHours + " часов работы может быть поделено между сотрудниками");
     }
 }
