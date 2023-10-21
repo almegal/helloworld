@@ -72,5 +72,28 @@ public class Main {
         var totalEmployerAfterUpdate = totalEmploeyr + newEmployer;
         var newWorkHours = totalEmployerAfterUpdate * workTime;
         System.out.println("Если в компании работает " + totalEmployerAfterUpdate + " человек, то всего " + newWorkHours + " часов работы может быть поделено между сотрудниками");
+
+        //Дополнительные задачи по теме переменные
+        variableTask();
     }
+    public static void variableTask () {
+        // дополнительные задачи по теме переменные 1.2
+        //task 6
+        int a = 12, b = 27, c = 44, d = 15, e = 9;
+        int result = a * (b + (c - d * e));
+        result *= -1;
+        System.out.println(result);
+
+        //task 7
+        int a1 = 5, b1 = 7;
+        b1 -= a1;
+        a1 = b1 + a1;
+        b1 = a1-b1;
+
+        //task 8
+        int a2 = 256, b2;
+        b2 = (a2/10)%10;
+        System.out.println(b2);
+    }
+
 }
