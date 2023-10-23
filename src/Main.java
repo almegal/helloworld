@@ -2,6 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        ifElseTask();
         //task 1
         var dog = 8.0;
         var cat = 3.6;
@@ -72,5 +73,29 @@ public class Main {
         var totalEmployerAfterUpdate = totalEmploeyr + newEmployer;
         var newWorkHours = totalEmployerAfterUpdate * workTime;
         System.out.println("Если в компании работает " + totalEmployerAfterUpdate + " человек, то всего " + newWorkHours + " часов работы может быть поделено между сотрудниками");
+    }
+    public static void ifElseTask(){
+        //task 6
+        int age = 19;
+        int salary = 50000;
+        int creditLimit = 0;
+
+        if(age <= 23) {
+            creditLimit = salary * 2;
+            if(salary >= 50000 && salary < 80000) {
+                creditLimit *= 1.2;
+            } else if (salary >= 80000) {
+                creditLimit *= 1.5;
+            }
+        } else if (age > 23) {
+            creditLimit = salary * 3;
+            if(salary >= 50000 && salary < 80000) {
+                creditLimit *= 1.2;
+            } else if (salary >= 80000) {
+                creditLimit *= 1.5;
+            }
+        }
+
+        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + creditLimit + " рублей");
     }
 }
