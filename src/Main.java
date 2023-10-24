@@ -76,8 +76,8 @@ public class Main {
     }
     public static void ifElseTask(){
         //task 6
-        int age = 19;
-        int salary = 50000;
+        int age = 24;
+        int salary = 80000;
         int creditLimit = 0;
 
         if(age <= 23) {
