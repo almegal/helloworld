@@ -2,6 +2,114 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        //lessons 2 varible
+        //task 1
+        byte b = 127;
+        short s = 300;
+        int i = 5000000;
+        long l = 999999999999999999L;
+        float f =  3.123456f;
+        double d = 1.9;
+        System.out.println("Значение переменной b с типом byte равно " + b);
+        System.out.println("Значение переменной s с типом short равно " + s);
+        System.out.println("Значение переменной i с типом int равно " + i);
+        System.out.println("Значение переменной l с типом long равно " + l);
+        System.out.println("Значение переменной f с типом float равно " + f);
+        System.out.println("Значение переменной d с типом double равно " + d);
+
+        // task 2
+        float floatVariable1 = 27.12f;
+        long longVariable = 987678965549L;
+        float floatVariable2 = (float)2.786;
+        short shortVariable1 = 569;
+        short shortVariable2 = -159;
+        int intVariable = 27897;
+        byte byteVariable = 67;
+
+
+        //task 3
+        byte studentsInLyudaClass, studentsInAnnaClass, studentsInKatyaClass;
+        studentsInLyudaClass = 23;
+        studentsInAnnaClass = 27;
+        studentsInKatyaClass = 30;
+
+        short papers = 480;
+
+        int papersForStudent = papers / (studentsInLyudaClass + studentsInKatyaClass + studentsInAnnaClass);
+        // or if you need float type
+        // float papersForStudentFloatType =(float) papers / (studentsInLyudaClass + studentsInKatyaClass + studentsInAnnaClass);
+        System.out.println("На каждого ученика рассчитано " + papersForStudent + " листов бумаги");
+
+        // task 4
+        byte perfomance = 16;
+        byte perfomanceForMinute = (byte) (perfomance / 2);
+        int perfomanceFor20Minutes = 20 * perfomanceForMinute;
+        int perfomanceForOneDay = 24 * 60 * perfomanceForMinute;
+        int perfomanceFor3Days = 24 * 3 * 60 * perfomanceForMinute;
+        int perfomanceForOneMonth = 30 * 24 * 60 * perfomanceForMinute;
+        System.out.println("За 20 минут машина произвела " + perfomanceFor20Minutes + " штук бутылок");
+        System.out.println("За 1 день машина произвела " + perfomanceForOneDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + perfomanceFor3Days + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + perfomanceForOneMonth + " штук бутылок");
+
+        //task 5
+        byte totalColoursJar = 120;
+        byte whiteJarNeedForClass = 2;
+        byte brownJarNeedForClass = 4;
+
+        byte classesInSchool = (byte) (totalColoursJar / (whiteJarNeedForClass + brownJarNeedForClass));
+
+        byte brownJarPurchased = (byte) ((totalColoursJar / classesInSchool - whiteJarNeedForClass) * classesInSchool);
+        byte whiteJarPurchased = (byte) ((totalColoursJar / classesInSchool - brownJarNeedForClass) * classesInSchool);
+        System.out.println("В школе, где "+ classesInSchool +" классов, нужно "+ whiteJarPurchased +" банок белой краски и "+ brownJarPurchased +" банок коричневой краски");
+
+        // task 6
+        byte bananas = 5;
+        short milk = 200;
+        byte iceCream = 2;
+        byte eggs = 4;
+        //weight;
+        byte banansWeight = 80;
+        float milkWeightForML = 105/100f;
+        byte iceCreamWeight = 100;
+        byte eggWeight = 70;
+
+        short totalWeightGrams = (short) (bananas * banansWeight + milk * milkWeightForML + iceCream * iceCreamWeight + eggs * eggWeight);
+        float totalWeightKG =  totalWeightGrams / 1000f;
+        System.out.println(totalWeightGrams);
+        System.out.println(totalWeightKG);
+
+        //task 7
+        byte needLoseWeightInKG = 7;
+        short lose250ForDay = 250;
+        short lose500ForDay = 500;
+
+        short needLoseWeightInGram = (short) (needLoseWeightInKG * 1000);
+
+        byte needDaysMakeFormLose250 = (byte) (needLoseWeightInGram / lose250ForDay);
+        byte needDaysMakeFormLose500 = (byte) (needLoseWeightInGram / lose500ForDay);
+        byte averageDays = (byte) ((needDaysMakeFormLose250 + needDaysMakeFormLose500) / 2);
+        System.out.println(needDaysMakeFormLose250);
+        System.out.println(needDaysMakeFormLose500);
+        System.out.println(averageDays);
+
+        //task 8
+        int salaryMasha = 67760, salaryDenis = 83690, salaryKristi = 76230;
+        int salaryMashaUp = (int) (salaryMasha * 1.1), salaryDenisUp = (int) (salaryDenis * 1.1), salaryKristiUp = (int) (salaryKristi *1.1);
+
+        int yearSalaryMashaBeforeUp = salaryMasha * 12, yearSalaryMashaAfterUp = salaryMashaUp * 12;
+        int salaryDifferentMasha = yearSalaryMashaAfterUp - yearSalaryMashaBeforeUp;
+
+        int yearSalaryDenisBeforeUp = salaryDenis * 12, yearSalaryDenisAfterUp = salaryDenisUp * 12;
+        int salaryDifferentDenis = yearSalaryDenisAfterUp - yearSalaryDenisBeforeUp;
+
+        int yearSalaryKristiBeforeUp = salaryKristi * 12, yearSalaryKristiAfterUp = salaryKristiUp * 12;
+        int salaryDifferentKristi = yearSalaryKristiAfterUp - yearSalaryKristiBeforeUp;
+
+        System.out.println("Маша теперь получает " + salaryMashaUp + " рублей. Годовой доход вырос на " + salaryDifferentMasha+ " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisUp + " рублей. Годовой доход вырос на " + salaryDifferentDenis+ " рублей");
+        System.out.println("Кристина теперь получает " + salaryKristiUp + " рублей. Годовой доход вырос на " + salaryDifferentKristi+ " рублей");
+        /*
         ifElseTask();
         //task 1
         var dog = 8.0;
@@ -120,5 +228,7 @@ public class Main {
         }
 
         System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + creditLimit + " рублей");
+
+         */
     }
 }
